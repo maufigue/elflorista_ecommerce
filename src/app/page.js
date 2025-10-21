@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { Libre_Baskerville } from 'next/font/google';
 
+
 const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -14,11 +15,12 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-pink-50 px-4 py-10">
       {/* Título principal */}
       <h1
-        className={`text-4xl sm:text-5xl mb-3 text-center leading-tight ${libreBaskerville.className}`}
-      >
-        El Florista
-      </h1>
-      <hr className="border-t-2 border-gray-400 w-24 sm:w-40 mx-auto mb-10 rounded-full" />
+  className={`text-4xl sm:text-5xl mb-2 text-center font-serif ${libreBaskerville.className} text-black`}
+  style={{ fontFamily: "'Libre Baskerville', serif" }}
+>
+  El Florista
+</h1>
+      <hr className="border-t-2 border-gray-400 w-50 sm:w-70 mx-auto mb-10 rounded-full" />
 
       {/* Contenedor principal de opciones */}
       <div className="flex flex-col sm:flex-row flex-wrap gap-10 sm:gap-12 justify-center items-center">
@@ -34,7 +36,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="mt-3 text-lg sm:text-xl font-semibold">Girasol</span>
+          <span className="mt-3 text-lg sm:text-xl font-semibold text-black">Girasol</span>
         </div>
 
         {/* 🌹 Opción Rosas */}
@@ -49,7 +51,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="mt-3 text-lg sm:text-xl font-semibold">Rosas</span>
+          <span className="mt-3 text-lg sm:text-xl font-semibold text-black">Rosas</span>
         </div>
 
         {/* 💐 Opción Ramos Especiales */}
@@ -64,7 +66,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="mt-3 text-lg sm:text-xl font-semibold">
+          <span className="mt-3 text-lg sm:text-xl font-semibold text-black">
             Ramos Especiales
           </span>
         </div>

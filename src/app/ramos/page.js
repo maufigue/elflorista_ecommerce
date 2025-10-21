@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { HomeIcon } from '@heroicons/react/24/solid';
-import ProductCard from '../../components/ProductCard';
+import ProductCardEspecial from '../../components/ProductCardEspecial';
 import { Libre_Baskerville } from 'next/font/google';
 
 const libreBaskerville = Libre_Baskerville({
@@ -13,10 +13,11 @@ export default function Girasoles() {
   const router = useRouter();
 
   const products = [
-    { name: "Ramo de Girasol", price: "25.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
-    { name: "Ramo 6 Girasoles", price: "120.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
-    { name: "Ramo 12 Girasoles", price: "210.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
-    { name: "Ramo 24 Girasoles", price: "300.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
+  {
+      name: "Ramo Rosas + Dolares",
+      price: "Consultar",
+      image: "https://imgs.search.brave.com/GDHDj348bNrAoLjdTjJbCp_u_DzmB0mc-aPIEJnWhuU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IzL2Y0/Lzc3L2IzZjQ3NzZi/ZmI4NjYxMTg2NzQ4/NTE1NTdmZDVjNzg3/LmpwZw",
+    },
   ];
 
   return (
@@ -44,10 +45,9 @@ export default function Girasoles() {
       {/* Grid de productos */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center text-black">
         {products.map((product, index) => (
-          <ProductCard
+          <ProductCardEspecial
             key={index}
             name={product.name}
-            price={product.price}
             image={product.image}
           />
         ))}
