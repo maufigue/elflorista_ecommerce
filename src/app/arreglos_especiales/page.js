@@ -13,10 +13,20 @@ export default function Girasoles() {
   const router = useRouter();
 
   const products = [
-  {
-      name: "Ramo Rosas + Dolares",
+    {
+      name: "Ramo de Rosas & Girasoles",
       price: "Consultar",
-      image: "https://imgs.search.brave.com/GDHDj348bNrAoLjdTjJbCp_u_DzmB0mc-aPIEJnWhuU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IzL2Y0/Lzc3L2IzZjQ3NzZi/ZmI4NjYxMTg2NzQ4/NTE1NTdmZDVjNzg3/LmpwZw",
+      image: "/images/girasol/rosas_girasoles.jpg",
+    },
+        {
+      name: "Ramo de Dolares",
+      price: "Consultar",
+      image: "/images/arreglos_especiales/rosas_dolares.jpg",
+    },
+    {
+      name: "Jarrón  de Girasoles",
+      price: "Consultar",
+      image: "/images/girasol/jarron_girasoles.jpg",
     },
   ];
 
@@ -32,7 +42,7 @@ export default function Girasoles() {
 </h1>
         <button
           onClick={() => router.push('/')}
-          className="flex items-center justify-center w-12 h-12 bg-white-500 text-black rounded-full shadow-lg hover:bg-yellow-600 transition-colors"
+          className="flex items-center justify-center w-12 h-12 bg-white-500 text-black rounded-full shadow-lg hover:bg-gray-600 transition-colors"
           title="Ir al inicio"
         >
           <HomeIcon className="w-6 h-6" />

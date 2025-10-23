@@ -13,10 +13,14 @@ export default function Girasoles() {
   const router = useRouter();
 
   const products = [
-    { name: "Ramo de Girasol", price: "25.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
-    { name: "Ramo 6 Girasoles", price: "120.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
-    { name: "Ramo 12 Girasoles", price: "210.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
-    { name: "Ramo 24 Girasoles", price: "300.000", image: "https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc" },
+    { name: "Girasol & Eucalipto", price: "20.000", image: "/images/girasol/ramo_girasol_eucalipto.jpg" },
+    { name: "Girasol & Gypsophila", price: "20.000", image: "/images/girasol/ramo_girasol_gypso.jpg" },
+    { name: "6 Girasoles & Eucalipto", price: "120.000", image: "/images/girasol/ramo_6_girasol_eucalipto.jpg" },
+    { name: "6 Girasoles & Gypsophila", price: "120.000", image: "/images/girasol/ramo_6_girasol_gypso.jpg" },
+    { name: "12 Girasoles & Eucalipto", price: "190.000", image: "/images/girasol/ramo_12_girasol_eucalipto.jpg" },
+    { name: "12 Girasoles & Gypsophila", price: "190.000", image: "/images/girasol/ramo_12_girasol_gypso.jpg" },
+    { name: "24 Girasoles & Eucalipto", price: "250.000", image: "/images/girasol/ramo_24_girasol_eucalipto.jpg" },
+    { name: "24 Girasoles & Gypsophila", price: "250.000", image: "/images/girasol/ramo_24_girasol_gypso.jpg" },
   ];
 
   return (
@@ -31,7 +35,7 @@ export default function Girasoles() {
 </h1>
         <button
           onClick={() => router.push('/')}
-          className="flex items-center justify-center w-12 h-12 bg-white-500 text-black rounded-full shadow-lg hover:bg-yellow-600 transition-colors"
+          className="flex items-center justify-center w-12 h-12 bg-white-500 text-black rounded-full shadow-lg hover:bg-gray-600 transition-colors"
           title="Ir al inicio"
         >
           <HomeIcon className="w-6 h-6" />

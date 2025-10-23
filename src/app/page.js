@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { Libre_Baskerville } from 'next/font/google';
-
+import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
@@ -15,11 +15,12 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-pink-50 px-4 py-10">
       {/* Título principal */}
       <h1
-  className={`text-4xl sm:text-5xl mb-2 text-center font-serif ${libreBaskerville.className} text-black`}
-  style={{ fontFamily: "'Libre Baskerville', serif" }}
->
-  El Florista
-</h1>
+        className={`text-4xl sm:text-5xl mb-2 text-center font-serif ${libreBaskerville.className} text-black`}
+        style={{ fontFamily: "'Libre Baskerville', serif" }}
+      >
+        El Florista
+      </h1>
+
       <hr className="border-t-2 border-gray-400 w-50 sm:w-70 mx-auto mb-10 rounded-full" />
 
       {/* Contenedor principal de opciones */}
@@ -31,12 +32,12 @@ export default function Home() {
         >
           <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <img
-              src="https://imgs.search.brave.com/ZFNuT1pLEKWkAQjN44bzqfzKaU_XW48RoTN24BTH2H8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbG9y/aXN0ZXJpYWZlbGl1/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNC9yYW1v/LWdpcmFzb2xlcy5q/cGc"
+              src="/images/girasol/ramo_girasoles_seccion.jpg"
               alt="Girasol"
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="mt-3 text-lg sm:text-xl font-semibold text-black">Girasol</span>
+          <span className="mt-3 text-lg sm:text-xl font-semibold text-black">Girasoles</span>
         </div>
 
         {/* 🌹 Opción Rosas */}
@@ -46,7 +47,7 @@ export default function Home() {
         >
           <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <img
-              src="https://imgs.search.brave.com/ug5EVyhaqsVCW1SmoWX8t7V-Zbdhp_8y3zFo1bNWEC4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9yYW1vLWVzdGEt/ZW52dWVsdG8tZWxl/Z2FudGVtZW50ZS1j/b21iaW5hY2lvbi1j/b2xvcmVzLWhlcm1v/c28tcmFtby1yb3Nh/c18xMjk1NzU2LTIy/NzAyMC5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA"
+              src="/images/rosa/ramo_rosas_seccion.jpg"
               alt="Rosa"
               className="w-full h-full object-cover"
             />
@@ -54,23 +55,40 @@ export default function Home() {
           <span className="mt-3 text-lg sm:text-xl font-semibold text-black">Rosas</span>
         </div>
 
-        {/* 💐 Opción Ramos Especiales */}
+        {/* 💐 Opción Arreglos Especiales */}
         <div
-          onClick={() => router.push('/ramos')}
+          onClick={() => router.push('/arreglos_especiales')}
           className="flex flex-col items-center cursor-pointer hover:scale-105 transform transition-transform duration-300 w-40 sm:w-48"
         >
           <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <img
-              src="https://imgs.search.brave.com/GDHDj348bNrAoLjdTjJbCp_u_DzmB0mc-aPIEJnWhuU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IzL2Y0/Lzc3L2IzZjQ3NzZi/ZmI4NjYxMTg2NzQ4/NTE1NTdmZDVjNzg3/LmpwZw"
-              alt="Ramos Especiales"
+              src="/images/arreglos_especiales/rosas_dolares.jpg"
+              alt="Arreglos Especiales"
               className="w-full h-full object-cover"
             />
           </div>
           <span className="mt-3 text-lg sm:text-xl font-semibold text-black">
-            Ramos Especiales
+            Arreglos Especiales
           </span>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="mt-16 w-full bg-black-100 border-t border-gray-300 py-6 text-center text-sm sm:text-base">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-700">
+          <div className="flex items-center gap-2">
+            <PhoneIcon className="w-5 h-5" />
+            <span>+595987288031</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPinIcon className="w-5 h-5" />
+            <span>Santa Rosa del Aguaray, Paraguay</span>
+          </div>
+        </div>
+        <p className="mt-4 text-gray-500 text-xs">
+          © {new Date().getFullYear()} El Florista — Todos los derechos reservados.
+        </p>
+      </footer>
     </div>
   );
 }

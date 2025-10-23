@@ -1,7 +1,7 @@
 // src/components/ProductCard.js
 export default function ProductCard({ name, price, image }) {
   // Mensaje que se enviará por WhatsApp
-  const mensaje = encodeURIComponent(`¡Hola! 🌸 Quiero encargar el ${name} por Gs. ${price}`);
+  const mensaje = encodeURIComponent(`¡Hola! 💐 Quiero encargar el ${name} por Gs. ${price}`);
   const whatsapp = `https://wa.me/595987288031?text=${mensaje}`; 
 
   return (
