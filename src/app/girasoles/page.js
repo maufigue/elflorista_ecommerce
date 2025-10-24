@@ -13,14 +13,14 @@ export default function Girasoles() {
   const router = useRouter();
 
   const products = [
-    { name: "Girasol & Eucalipto", price: "20.000", image: "/images/girasol/ramo_girasol_eucalipto.jpg" },
-    { name: "Girasol & Gypsophila", price: "20.000", image: "/images/girasol/ramo_girasol_gypso.jpg" },
-    { name: "6 Girasoles & Eucalipto", price: "120.000", image: "/images/girasol/ramo_6_girasol_eucalipto.jpg" },
-    { name: "6 Girasoles & Gypsophila", price: "120.000", image: "/images/girasol/ramo_6_girasol_gypso.jpg" },
-    { name: "12 Girasoles & Eucalipto", price: "190.000", image: "/images/girasol/ramo_12_girasol_eucalipto.jpg" },
-    { name: "12 Girasoles & Gypsophila", price: "190.000", image: "/images/girasol/ramo_12_girasol_gypso.jpg" },
-    { name: "24 Girasoles & Eucalipto", price: "250.000", image: "/images/girasol/ramo_24_girasol_eucalipto.jpg" },
-    { name: "24 Girasoles & Gypsophila", price: "250.000", image: "/images/girasol/ramo_24_girasol_gypso.jpg" },
+    { name: "Girasol & Eucalipto", price: "25.000", image: "/images/girasol/ramo_girasol_eucalipto.jpg" },
+    { name: "Girasol & Gypsophila", price: "25.000", image: "/images/girasol/ramo_girasol_gypso.jpg" },
+    { name: "6 Girasoles & Eucalipto", price: "130.000", image: "/images/girasol/ramo_6_girasol_eucalipto.jpg" },
+    { name: "6 Girasoles & Gypsophila", price: "130.000", image: "/images/girasol/ramo_6_girasol_gypso.jpg" },
+    { name: "12 Girasoles & Eucalipto", price: "220.000", image: "/images/girasol/ramo_12_girasol_eucalipto.jpg" },
+    { name: "12 Girasoles & Gypsophila", price: "220.000", image: "/images/girasol/ramo_12_girasol_gypso.jpg" },
+    { name: "24 Girasoles & Eucalipto", price: "310.000", image: "/images/girasol/ramo_24_girasol_eucalipto.jpg" },
+    { name: "24 Girasoles & Gypsophila", price: "310.000", image: "/images/girasol/ramo_24_girasol_gypso.jpg" },
   ];
 
   return (

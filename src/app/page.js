@@ -67,7 +67,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="mt-3 text-lg sm:text-xl font-semibold text-black">
+          <span className="mt-3 text-lg sm:text-xl font-semibold text-black text-center block leading-tight max-w-[8rem] sm:max-w-none">
             Arreglos Especiales
           </span>
         </div>
