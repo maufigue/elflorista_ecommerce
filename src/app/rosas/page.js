@@ -25,32 +25,32 @@ export default function Girasoles() {
     },
     {
       name: "6 Rosas & Eucalipto",
-      price: "140.000",
+      price: "180.000",
       image: "/images/rosa/ramo_6_rosa_eucalipto.jpg",
     },
     {
       name: "6 Rosas & Gypsophila",
-      price: "140.000",
+      price: "180.000",
       image: "/images/rosa/ramo_6_rosa_gypso.jpg",
     },
     {
       name: "12 Rosas & Eucalipto",
-      price: "230.000",
+      price: "250.000",
       image: "/images/rosa/ramo_12_rosa_eucalipto.jpg",
     },
     {
       name: "12 Rosas & Gypsophila",
-      price: "230.000",
+      price: "250.000",
       image: "/images/rosa/ramo_12_rosa_gypso.jpg",
     },
     {
       name: "24 Rosas & Eucalipto",
-      price: "320.000",
+      price: "400.000",
       image: "/images/rosa/ramo_24_rosa_eucalipto.jpg",
     },
     {
       name: "24 Rosas & Gypsophila",
-      price: "320.000",
+      price: "400.000",
       image: "/images/rosa/ramo_24_rosa_gypso.jpg",
     },
   ];
