@@ -35,7 +35,7 @@ export default function Girasoles() {
     },
     {
       name: "12 Rosas & Eucalipto",
-      price: "240.000",
+      price: "250.000",
       image: "/images/rosa/ramo_12_rosa_eucalipto.jpg",
     },
     {
