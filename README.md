@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# El Florista – Production E-commerce Platform
 
-## Getting Started
+El Florista is a live e-commerce platform currently operating in Paraguay, designed and deployed as an independent project.  
+The platform is actively used to showcase and sell floral products, integrating real-world business operations with modern web technologies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://elflorista.com.py
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Overview
 
-## Learn More
+This project started as a frontend-focused application and is evolving into a **data-driven system** with plans for database integration, automated pipelines, and analytics.
 
-To learn more about Next.js, take a look at the following resources:
+It serves both as:
+- A real business platform
+- A technical project for continuous learning and system design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+### Frontend
+- Next.js (App Router)
+- React
+- Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deployment & Infrastructure
+- Git & GitHub (version control)
+- Vercel (CI/CD & hosting)
+- Custom domain via NIC Paraguay
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+##  Current Features
+
+- Product categorization (Girasoles, Rosas, Arreglos Especiales)
+- Responsive design (mobile & desktop optimized)
+- Client-side navigation with dynamic routing
+- WhatsApp-based order flow
+- Custom domain with production deployment
+
+---
+
+## Architecture (Current)
+
+User → Next.js Frontend → WhatsApp Order Flow Deployment → Vercel  
+
+Currently, the system does not persist structured transactional data internally.
+
+---
+
+## Planned Improvements (In Progress)
+
+The project is being expanded into a **data-oriented architecture**, including:
+
+- PostgreSQL database integration
+- Backend API for product & order management
+- Data modeling for transactional and analytical use
+- Python-based ETL pipelines
+- Automated data processing workflows
+- Cloud experimentation (AWS: S3, RDS, Lambda)
+
+---
+
+## Data Engineering Roadmap
+
+This project will evolve into a practical data engineering environment:
+
+1. Store transactional data in PostgreSQL  
+2. Expose REST APIs for data access  
+3. Build ETL pipelines using Python  
+4. Automate workflows (cron / cloud functions)  
+5. Generate analytics and reporting  
+
+---
+
+## Key Objectives
+
+- Transition from static frontend to full-stack data system
+- Implement production-grade database design
+- Develop ETL pipelines
+- Simulate scalable data workflows
+- Continuously improve system architecture
+
+---
+
+## Status
+
+Active project in continuous development and production use.
+
+---
+
+## Author
+
+**Mauricio Figueredo**  
+
+---
+
+## Contact
+
+For inquiries or collaborations:  
+mauriciofgaray@hotmail.com
